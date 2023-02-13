@@ -4,15 +4,18 @@ import * as S from './styles'
 
 
 
-const  Badge = ({ status }:BadgeProps) => {
+const  Badge = () => {
   const [count, setCount] = useState(0)
 
   return(
+    <S.Container>
       <S.ContainerWrapper> 
           <S.WrapperBadge > 
-            <S.NumberStatus onClick={() => setCount(count +1)}></S.NumberStatus>
+            {count}
           </S.WrapperBadge>
       </S.ContainerWrapper>
+      <S.ButtonCount onClick={() => setCount(count + 1)}>+</S.ButtonCount>
+    </S.Container>
   )
 }
 

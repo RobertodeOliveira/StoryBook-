@@ -7,27 +7,41 @@ export const ContainerWrapper = styled.div`
 
   width: 40px;
   height: 40px;
-  background-color: #C0C0C0;
   border-radius: 8px;
+  background-color: #C0C0C0;
 `
 
 export const WrapperBadge = styled.div`
     display: flex;
     justify-content: center;
-    /* flex: 1; */
+    align-items: center;
 
-    min-width: 16px;
-    height: 16px;
+    padding: 0.05rem;
+    min-width: 18px;
+    height: 18px;
     background-color: #FF6347;
+    color: White;
+    font-size: 12px;
     border-radius: 8px;
     margin-top: -36px;
-    margin-left: 32px;
-
+    margin-left: 34px;
 `
-export const NumberStatus = styled.div`
-  padding: 0;
-  margin: 0;
+export const Container = styled.div`
+  display: flex;
+  gap: 10px;
+`
 
-  font-size: 14px;
-  color: white;
+export const ButtonCount = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+  text-decoration: none;
+  margin-top: 12px;
+
+  :hover{
+    cursor: pointer;
+  }
 `
